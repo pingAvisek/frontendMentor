@@ -28,7 +28,7 @@ body {
 
 .container {
   width: 620px;
-  height: 60vh;
+  /* height: 60vh; */
   /* padding: 10vh 0 !important; */
   margin: 10% auto !important;
   display: flex;
@@ -101,4 +101,31 @@ body {
   /* font-size: 1rem; */
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+}
+
+#mblImg {
+  display: none;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    max-width: 387px;
+    padding: 1rem;
+  }
+
+  .container .right-container {
+    padding: 1rem 0;
+  }
+
+  #mblImg {
+    width: fit-content;
+    display: block;
+  }
+
+  #pcImg {
+    display: none;
+  }
 }
