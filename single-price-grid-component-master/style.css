@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+  --para: hsl(179, 100%, 87%);
+}
+
+body {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 675px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .top-container {
+  padding: 2rem;
+}
+
+.container .top-container h2 {
+  font-weight: 700;
+  color: var(--Cyan);
+}
+
+.container .top-container h3 {
+  font-weight: 700;
+  color: var(--BrightYellow);
+}
+
+.container .top-container p {
+  font-weight: 700;
+  color: var(--GrayishBlue);
+}
+
+.container .top-container h2,
+.container .top-container h3,
+.container .top-container p {
+  margin: 0.8rem 0;
+}
+
+.container .bottom-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+}
+
+.container .bottom-container .left-container {
+  flex-basis: 50%;
+  /* width: 50%; */
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.container .bottom-container .right-container {
+  flex-basis: 50%;
+  /* width: 50%; */
+  padding: 2rem;
+}
+
+.container .bottom-container h4 {
+  font-weight: 700;
+  color: var(--LightGray);
+  margin-bottom: 1rem;
+}
+
+.prices {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+.prices .amount {
+  color: var(--LightGray);
+}
+
+.prices .duration {
+  padding-left: 1rem;
+  color: var(--para);
+  font-weight: 700;
+}
+
+.container .bottom-container .left-container h5 {
+  font-weight: 700;
+  color: var(--para);
+  margin-bottom: 1rem;
+}
+
+.container .bottom-container .left-container button {
+  background-color: var(--BrightYellow);
+  width: 100%;
+  color: var(--LightGray);
+  border: none;
+  padding: 1rem 0;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.container .bottom-container .left-container button a {
+  text-decoration: none;
+  color: var(--LightGray);
+}
+
+.container .bottom-container .right-container p {
+  font-weight: 700;
+  color: var(--para);
+  margin: 1rem auto;
+  line-height: 1.5;
+}
+
+@media (max-width: 375px) {
+  .container .bottom-container {
+    flex-direction: column;
+  }
+}
